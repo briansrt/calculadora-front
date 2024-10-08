@@ -54,11 +54,11 @@ function handleSubmit(e) {
 
         let url = '';
         if (operacion === "Ecuacion") {
-            url = 'http://calculadora-back-ten.vercel.app/v1/calculadora/ecuacion';
+            url = 'https://calculadora-back-ten.vercel.app/v1/calculadora/ecuacion';
         } else if (operacion === "Ascendente") {
-            url = 'http://calculadora-back-ten.vercel.app/v1/calculadora/ascendente';
+            url = 'https://calculadora-back-ten.vercel.app/v1/calculadora/ascendente';
         } else if (operacion === "Descendiente") {
-            url = 'http://calculadora-back-ten.vercel.app/v1/calculadora/descendente';
+            url = 'https://calculadora-back-ten.vercel.app/v1/calculadora/descendente';
         }
 
         fetch(url, {
