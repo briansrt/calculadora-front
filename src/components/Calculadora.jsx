@@ -23,7 +23,7 @@ function Calculadora(){
     }
 
     function handleHistorial() {
-        fetch('http://localhost:3500/v1/calculadora/historial')
+        fetch('https://calculadora-back-ten.vercel.app/v1/calculadora/historial')
             .then(res => res.json())
             .then(data => {
                 setHistorial(JSON.stringify(data, null, 2));
@@ -54,11 +54,11 @@ function handleSubmit(e) {
 
         let url = '';
         if (operacion === "Ecuacion") {
-            url = 'http://localhost:3500/v1/calculadora/ecuacion';
+            url = 'http://calculadora-back-ten.vercel.app/v1/calculadora/ecuacion';
         } else if (operacion === "Ascendente") {
-            url = 'http://localhost:3500/v1/calculadora/ascendente';
+            url = 'http://calculadora-back-ten.vercel.app/v1/calculadora/ascendente';
         } else if (operacion === "Descendiente") {
-            url = 'http://localhost:3500/v1/calculadora/descendente';
+            url = 'http://calculadora-back-ten.vercel.app/v1/calculadora/descendente';
         }
 
         fetch(url, {
